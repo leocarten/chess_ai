@@ -1,12 +1,19 @@
-Simple Java Chess Library
+Simple Java Chess Library - A build derived from: https://github.com/bhlangonijr/chesslib
 =========================
 
-[![](https://jitpack.io/v/bhlangonijr/chesslib.svg)](https://jitpack.io/#bhlangonijr/chesslib) ![mvn build](https://github.com/bhlangonijr/chesslib/actions/workflows/maven.yml/badge.svg)
 
 
 Chesslib is a simple java chess library for generating
 legal chess moves given a chessboard [position](https://en.wikipedia.org/wiki/Chess#Setup),
-parse a chess game stored in [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) or [FEN](https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation) format and many other things.
+parse a chess game stored in [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) or [FEN](https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation) format and many other things. My extension of this library involves using AI to decide the optimized move, and is designed to find the optimal move using all cores of the machine this algorithm is running on.
+
+
+# Things for Leo to do
+1. Implement AI for optimized Algorithm.
+2. Create scoring system.
+3. Figure out how we want to take advangtage of the FEN string to make move.
+4. Create logic of turns.
+
 
 # Table of Contents
 
@@ -30,9 +37,8 @@ parse a chess game stored in [PGN](https://en.wikipedia.org/wiki/Portable_Game_N
 ## From source
 
 ```
-$ git clone git@github.com:bhlangonijr/chesslib.git
+$ git clone https://github.com/leocarten/chess_ai.git
 $ cd chesslib/
-$ mvn clean compile package install
 ```
 
 ## From repo
@@ -76,7 +82,7 @@ dependencies {
 }
 ```
 
-# <a name="Usage"></a> Usage
+# <a name="Usage"></a> Usage [All done in Main.java]
 
 ## <a name="Create_a_chessboard_and_make_a_move"></a> Create a chessboard and make a move
 

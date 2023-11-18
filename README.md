@@ -1,18 +1,19 @@
-Simple Java Chess Library - A build derived from: https://github.com/bhlangonijr/chesslib
+Simple Java Chess Library
 =========================
 
-
+A build derived from: https://github.com/bhlangonijr/chesslib
 
 Chesslib is a simple java chess library for generating
 legal chess moves given a chessboard [position](https://en.wikipedia.org/wiki/Chess#Setup),
 parse a chess game stored in [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) or [FEN](https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation) format and many other things. My extension of this library involves using AI to decide the optimized move, and is designed to find the optimal move using all cores of the machine this algorithm is running on.
 
 
-# Things for Leo to do
+# Things to do
 1. Implement AI for optimized Algorithm.
 2. Create scoring system.
 3. Figure out how we want to take advangtage of the FEN string to make move.
 4. Create logic of turns.
+5. Convert threading logic from Primes algorithm to that of move optimization.
 
 
 # Table of Contents

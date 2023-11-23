@@ -53,6 +53,8 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class Board implements Cloneable, BoardEvent {
 
+
+
     private static final List<Long> keys = new ArrayList<>();
     private static final long RANDOM_SEED = 49109794719L;
     private static final int ZOBRIST_TABLE_SIZE = 2000;

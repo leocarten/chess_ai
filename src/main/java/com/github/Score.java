@@ -25,19 +25,17 @@ public class Score {
         for (int i = 0; i < board.length(); i++) {
             char current_piece = board.charAt(i);
             String pieceAsString = String.valueOf(current_piece); // Convert char to String
-            if (current_piece != '/' && !Character.isDigit(current_piece)) {
-                // Integer pieceScore = scoring_system.get(pieceAsString);
+            if (!Character.isDigit(current_piece) && current_piece != '/') {
                 if (Character.isLowerCase(current_piece)) {
                     Integer pieceScore = scoring_system.get(pieceAsString);
-                    black_score += pieceScore.intValue();
-                }
-                else{
+                    black_score += pieceScore != null ? pieceScore : 0;
+                } else {
                     char lowercaseChar = Character.toLowerCase(current_piece);
-                    String otherPeice = String.valueOf(lowercaseChar);
-                    Integer pieceScore = scoring_system.get(otherPeice);
-                    white_score += pieceScore.intValue();
+                    String otherPiece = String.valueOf(lowercaseChar);
+                    Integer pieceScore = scoring_system.get(otherPiece);
+                    white_score += pieceScore != null ? pieceScore : 0;
                 }
-        }
+            }
     }
     return white_score - black_score;
     

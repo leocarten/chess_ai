@@ -116,6 +116,11 @@ PPPP PPP
 RNBQKBNR
 Side: BLACK
 ```
+
+Controlling how many moves ahead it looks:
+```
+String bestmove = bestMove.findBestMove(board, 3); // looking 3 moves ahead
+```
 ## <a name="Undo_a_move"></a> Undo a move
 
 ```java

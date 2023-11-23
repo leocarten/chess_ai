@@ -9,11 +9,7 @@ parse a chess game stored in [PGN](https://en.wikipedia.org/wiki/Portable_Game_N
 
 
 # Things to do
-1. Implement AI for optimized Algorithm.
-2. Create scoring system.
-3. Figure out how we want to take advangtage of the FEN string to make move.
-4. Create logic of turns.
-5. Convert threading logic from Primes algorithm to that of move optimization.
+1. Convert threading logic from Primes algorithm to that of move optimization.
 
 
 # Table of Contents
